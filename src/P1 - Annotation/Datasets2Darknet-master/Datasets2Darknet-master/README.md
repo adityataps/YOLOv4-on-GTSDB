@@ -21,7 +21,7 @@ For the moment, in the [dataset_parsers](./src/datasets_parsers/) folder there a
 
 ### Detection Task
 #### Traffic Sign Datasets
-- [German Traffic Sign Detection Benchmark](http://benchmark.ini.rub.de/?section=gtsdb&subsection=dataset) - Dataset Parser at [src/datasets_parsers/gtsdb_parser](./src/datasets_parsers/gtsdb_parser.py)
+- [German Traffic Sign Detection Benchmark](http://benchmark.ini.rub.de/?section=gtsdb&subsection=dataset) - Dataset Parser at [src/datasets_parsers/gtsdb_parser](src/gtsdb_parser.py)
 - [Belgium Traffic Sign Dataset:](https://btsd.ethz.ch/shareddata/) - Dataset Parser at [src/datasets_parsers/btsdb_parser](./src/datasets_parsers/btsdb_parser.py)
 - [Mapping and Assessing the State of Traffic InFrastructure (MASTIF) Dataset](http://www.zemris.fer.hr/~ssegvic/mastif/datasets.shtml) - Dataset Parser at [src/datasets_parsers/mastif_parser](./src/datasets_parsers/mastif_parser.py)
 - [LISA Traffic Sign Dataset](http://cvrr.ucsd.edu/vivachallenge/index.php/signs/sign-detection/) - Dataset Parser at [src/datasets_parsers/lisats_parser](./src/datasets_parsers/lisats_parser.py)
@@ -72,7 +72,7 @@ DATASETS_NAMES = ["GTSDB", "MASTIF"]
 ### 3º Modify the input folders from the parsers file
 Once you have downloaded the images and annotations from the datasets you are going to use, you should extract the information to separate folders. After that, the last step would be to modify the specific parsers you selected. You need to modify the paths contained in the file and adjust them to the location of these information in your computer. 
 
-For example, if we have the [German Traffic Sign Recognition Benchmark](http://benchmark.ini.rub.de/) dataset downloaded at "/home/angeliton/Desktop/DBs/Road Signs/GTSDB/", you should modfiy the GTSDB_ROOT_PATH variable at [src/datasets_parsers/gtsdb_parser](./src/datasets_parsers/gtsdb_parser.py) to that path.
+For example, if we have the [German Traffic Sign Recognition Benchmark](http://benchmark.ini.rub.de/) dataset downloaded at "/home/angeliton/Desktop/DBs/Road Signs/GTSDB/", you should modfiy the GTSDB_ROOT_PATH variable at [src/datasets_parsers/gtsdb_parser](src/gtsdb_parser.py) to that path.
 
 ### 4º Run the general parser
 Finally, you just need to execute the general parser python program. From the root path you have to execute:

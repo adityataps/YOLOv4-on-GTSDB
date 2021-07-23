@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+###
+data/FullIJCNN2013/
+data/FullIJCNN2013.zip

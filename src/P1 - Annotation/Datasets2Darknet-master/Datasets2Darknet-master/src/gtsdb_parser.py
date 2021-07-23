@@ -7,13 +7,13 @@ import csv
 from common_config import *
 
 # TO CHANGE
-GTSDB_ROOT_PATH = "/media/angeliton/Backup1/DBs/Road Signs/GTSDB/"
+GTSDB_ROOT_PATH = "../../../../../data/FullIJCNN2013/FullIJCNN2013/"
 RESIZE_PERCENTAGE = 0.6
 DB_PREFIX = 'gtsdb-'
 
 
 ANNOTATIONS_FILE_PATH = GTSDB_ROOT_PATH + "gt.txt"
-INPUT_PATH = GTSDB_ROOT_PATH + "input-img/"  # Path to the ppm images of the GTSRB dataset.
+INPUT_PATH = GTSDB_ROOT_PATH + "/"  # Path to the ppm images of the GTSRB dataset.
 
 
 def initialize_traffic_sign_classes():

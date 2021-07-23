@@ -24,7 +24,7 @@ TRAIN_PROB = 0.8
 TEST_PROB = 0.2
 ADD_FALSE_DATA = False
 
-SHOW_IMG = False # Show each image being processed (verbose)
+SHOW_IMG = True # Show each image being processed (verbose)
 COLOR_MODE = -1  # Color mode of the images read (-1 => RGB)
 OUTPUT_IMG_EXTENSION = ".jpg"  # Output extension for the files processed. 
 

@@ -4,24 +4,24 @@
 # The program will put those datasets together in a general one.
 import click
 
-import datasets_parsers.gtsdb_parser as GTSDB
-import datasets_parsers.btsdb_parser as BTSDB
-import datasets_parsers.lisats_parser as LISATS
-import datasets_parsers.lisatl_parser as LISATL
-import datasets_parsers.mastif_parser as MASTIF
-import datasets_parsers.rtsdc_parser as RTSDC
-import datasets_parsers.rtsdd_parser as RTSDD
+import gtsdb_parser as GTSDB
+# import datasets_parsers.btsdb_parser as BTSDB
+# import datasets_parsers.lisats_parser as LISATS
+# import datasets_parsers.lisatl_parser as LISATL
+# import datasets_parsers.mastif_parser as MASTIF
+# import datasets_parsers.rtsdc_parser as RTSDC
+# import datasets_parsers.rtsdd_parser as RTSDD
 from common_config import *
 
 
 # Datasets to use
-DATASETS = [LISATL, MASTIF, RTSDD]
-DATASETS_NAMES = ["LISATL", "MASTIF", "RTSDD"]
+DATASETS = [GTSDB]
+DATASETS_NAMES = ["GTSDB"]
 
 
 # Main method.
 @click.command()
-@click.option('--root_path', default="/home/angeliton/Desktop/SaferAuto/models/datasets/ere/", help='Path where you want to save the dataset.')
+@click.option('--root_path', default="../../../../../data/parsed/", help='Path where you want to save the dataset.')
 @click.option('--train_pct', default=TRAIN_PROB, help='Percentage of train images in final dataset. Format (0.0 - 1.0)')
 @click.option('--test_pct', default=TEST_PROB, help='Percentage of test images in final dataset. Format (0.0 - 1.0)')
 @click.option('--color_mode', default=COLOR_MODE, help='OpenCV Color mode for reading the images. (-1 (default) => color, 0 => bg).')
