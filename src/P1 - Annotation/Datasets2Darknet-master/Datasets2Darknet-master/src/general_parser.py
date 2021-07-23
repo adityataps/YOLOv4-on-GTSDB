@@ -21,7 +21,7 @@ DATASETS_NAMES = ["GTSDB"]
 
 # Main method.
 @click.command()
-@click.option('--root_path', default="../../../../../data/parsed/", help='Path where you want to save the dataset.')
+@click.option('--root_path', default="../../../annotated_imgs/", help='Path where you want to save the dataset.')
 @click.option('--train_pct', default=TRAIN_PROB, help='Percentage of train images in final dataset. Format (0.0 - 1.0)')
 @click.option('--test_pct', default=TEST_PROB, help='Percentage of test images in final dataset. Format (0.0 - 1.0)')
 @click.option('--color_mode', default=COLOR_MODE, help='OpenCV Color mode for reading the images. (-1 (default) => color, 0 => bg).')

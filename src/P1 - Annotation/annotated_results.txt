@@ -1,0 +1,81 @@
+GTSDB DATASET:
+total_false_negatives: 58
+total_annotated_images: 683 == 683
+max_false_data: 546
+[TRAIN FILES]
+        - CLASS 0 - PROHIBITORY : 466
+        - CLASS 1 - DANGER : 176
+        - CLASS 2 - MANDATORY : 143
+        - CLASS 3 - INFORMATION : 27
+        - CLASS 4 - STOP : 68
+        - CLASS 5 - YIELD : 21
+        - CLASS 6 - NOENTRY : 0
+        - CLASS 7 - TL-RED : 0
+        - CLASS 8 - TL-AMBER : 0
+        - CLASS 9 - TL-GREEN : 0
+        - CLASS 10 - FALSE_NEGATIVES : 0
+TOTAL: 901
+
+[TEST FILES]
+        - CLASS 0 - PROHIBITORY : 91
+        - CLASS 1 - DANGER : 43
+        - CLASS 2 - MANDATORY : 20
+        - CLASS 3 - INFORMATION : 5
+        - CLASS 4 - STOP : 15
+        - CLASS 5 - YIELD : 8
+        - CLASS 6 - NOENTRY : 0
+        - CLASS 7 - TL-RED : 0
+        - CLASS 8 - TL-AMBER : 0
+        - CLASS 9 - TL-GREEN : 0
+TOTAL: 182
+
+[PROPORTION]
+        - CLASS 0 - PROHIBITORY : 16.34%
+        - CLASS 1 - DANGER : 19.63%
+        - CLASS 2 - MANDATORY : 12.27%
+        - CLASS 3 - INFORMATION : 15.62%
+        - CLASS 4 - STOP : 18.07%
+        - CLASS 5 - YIELD : 27.59%
+        - CLASS 6 - NOENTRY : 0.00%
+        - CLASS 7 - TL-RED : 0.00%
+        - CLASS 8 - TL-AMBER : 0.00%
+        - CLASS 9 - TL-GREEN : 0.00%
+TOTAL DATASET:
+[TRAIN FILES]
+        - CLASS 0 - PROHIBITORY : 466
+        - CLASS 1 - DANGER : 176
+        - CLASS 2 - MANDATORY : 143
+        - CLASS 3 - INFORMATION : 27
+        - CLASS 4 - STOP : 68
+        - CLASS 5 - YIELD : 21
+        - CLASS 6 - NOENTRY : 0
+        - CLASS 7 - TL-RED : 0
+        - CLASS 8 - TL-AMBER : 0
+        - CLASS 9 - TL-GREEN : 0
+        - CLASS 10 - FALSE_NEGATIVES : 0
+TOTAL: 901
+
+[TEST FILES]
+        - CLASS 0 - PROHIBITORY : 91
+        - CLASS 1 - DANGER : 43
+        - CLASS 2 - MANDATORY : 20
+        - CLASS 3 - INFORMATION : 5
+        - CLASS 4 - STOP : 15
+        - CLASS 5 - YIELD : 8
+        - CLASS 6 - NOENTRY : 0
+        - CLASS 7 - TL-RED : 0
+        - CLASS 8 - TL-AMBER : 0
+        - CLASS 9 - TL-GREEN : 0
+TOTAL: 182
+
+[PROPORTION]
+        - CLASS 0 - PROHIBITORY : 16.34%
+        - CLASS 1 - DANGER : 19.63%
+        - CLASS 2 - MANDATORY : 12.27%
+        - CLASS 3 - INFORMATION : 15.62%
+        - CLASS 4 - STOP : 18.07%
+        - CLASS 5 - YIELD : 27.59%
+        - CLASS 6 - NOENTRY : 0.00%
+        - CLASS 7 - TL-RED : 0.00%
+        - CLASS 8 - TL-AMBER : 0.00%
+        - CLASS 9 - TL-GREEN : 0.00%
