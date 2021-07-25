@@ -11,7 +11,17 @@ from PIL import Image
 
 # TO CHANGE
 CLASS_NUMBER = 10 
-classes_names = ["PROHIBITORY", "DANGER", "MANDATORY", "INFORMATION", "STOP", "YIELD", "NOENTRY", "TL-RED", "TL-AMBER", "TL-GREEN", "FALSE_NEGATIVES"]
+classes_names = ["PROHIBITORY",
+                 "DANGER",
+                 "MANDATORY",
+                 "INFORMATION",
+                 "STOP",
+                 "YIELD",
+                 "NOENTRY",
+                 "TL-RED",
+                 "TL-AMBER",
+                 "TL-GREEN",
+                 "FALSE_NEGATIVES"]
 
 # No need to change
 OTHER_CLASS = CLASS_NUMBER + 1 # Class that will contain all the negative samples.
@@ -20,8 +30,8 @@ OTHER_CLASS_NAME = 'other'
 classes_counter_train = [0] * (CLASS_NUMBER + 1)
 classes_counter_test = [0] * CLASS_NUMBER
 
-TRAIN_PROB = 0.8
-TEST_PROB = 0.2
+TRAIN_PROB = 0.9
+TEST_PROB = 0.1
 ADD_FALSE_DATA = False
 
 SHOW_IMG = True # Show each image being processed (verbose)
