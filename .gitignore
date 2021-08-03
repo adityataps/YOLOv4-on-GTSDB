@@ -132,3 +132,5 @@ dmypy.json
 data/FullIJCNN2013/
 data/FullIJCNN2013.zip
 data/
+/src/P1 - Annotation/Datasets2Darknet-master/
+/src/P2 - Training/darknet/
