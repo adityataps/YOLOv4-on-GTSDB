@@ -1,0 +1,5 @@
+ 20000: 0.018077, 0.101380 avg loss, 0.000010 rate, 3.915000 seconds, 320000 images, 0.076167 hours left
+Saving weights to backup//yolov4-gtsdb_20000.weights
+Saving weights to backup//yolov4-gtsdb_last.weights
+Saving weights to backup//yolov4-gtsdb_final.weights
+If you want to train from the beginning, then use flag in the end of training command: -clear
