@@ -1,0 +1,34 @@
+ Last accuracy mAP@0.50 = 95.44 %, best = 96.48 %
+ 12000: 0.222047, 0.105996 avg loss, 0.000010 rate, 4.109000 seconds, 192000 images, 0.083380 hours left
+Resizing to initial size: 640 x 640  try to allocate additional workspace_size = 88.77 MB
+ CUDA allocate done!
+
+ calculation mAP (mean average precision)...
+ Detection layer: 139 - type = 28
+ Detection layer: 150 - type = 28
+ Detection layer: 161 - type = 28
+160
+ detections_count = 407, unique_truth_count = 267
+class_id = 0, name = PROHIBITORY, ap = 99.87%            (TP = 127, FP = 2)
+class_id = 1, name = DANGER, ap = 100.00%        (TP = 41, FP = 0)
+class_id = 2, name = MANDATORY, ap = 93.92%      (TP = 46, FP = 0)
+class_id = 3, name = STOP, ap = 85.71%           (TP = 12, FP = 3)
+class_id = 4, name = YIELD, ap = 100.00%         (TP = 21, FP = 0)
+class_id = 5, name = NOENTRY, ap = 91.12%        (TP = 12, FP = 1)
+
+ for conf_thresh = 0.25, precision = 0.98, recall = 0.97, F1-score = 0.97
+ for conf_thresh = 0.25, TP = 259, FP = 6, FN = 8, average IoU = 89.66 %
+
+ IoU threshold = 50 %, used Area-Under-Curve for each unique Recall
+ mean average precision (mAP@0.50) = 0.951037, or 95.10 %
+Total Detection Time: 7 Seconds
+
+Set -points flag:
+ `-points 101` for MS COCO
+ `-points 11` for PascalVOC 2007 (uncomment `difficult` in voc.data)
+ `-points 0` (AUC) for ImageNet, PascalVOC 2010-2012, your custom dataset
+
+ mean_average_precision (mAP@0.50) = 0.951037
+Saving weights to backup_2//yolov4-gtsdb_2_last.weights
+Saving weights to backup_2//yolov4-gtsdb_2_final.weights
+If you want to train from the beginning, then use flag in the end of training command: -clear

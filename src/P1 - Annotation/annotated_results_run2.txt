@@ -1,0 +1,57 @@
+GTSDB DATASET:
+total_false_negatives: 58
+total_annotated_images: 683 == 683
+max_false_data: 512
+[TRAIN FILES]
+        - CLASS 0 - PROHIBITORY : 429
+        - CLASS 1 - DANGER : 178
+        - CLASS 2 - MANDATORY : 113
+        - CLASS 3 - STOP : 18
+        - CLASS 4 - YIELD : 62
+        - CLASS 5 - NOENTRY : 16
+        - CLASS 6 - FALSE_NEGATIVES : 0
+TOTAL: 816
+
+[TEST FILES]
+        - CLASS 0 - PROHIBITORY : 128
+        - CLASS 1 - DANGER : 41
+        - CLASS 2 - MANDATORY : 50
+        - CLASS 3 - STOP : 14
+        - CLASS 4 - YIELD : 21
+        - CLASS 5 - NOENTRY : 13
+TOTAL: 267
+
+[PROPORTION]
+        - CLASS 0 - PROHIBITORY : 22.98%
+        - CLASS 1 - DANGER : 18.72%
+        - CLASS 2 - MANDATORY : 30.67%
+        - CLASS 3 - STOP : 43.75%
+        - CLASS 4 - YIELD : 25.30%
+        - CLASS 5 - NOENTRY : 44.83%
+TOTAL DATASET:
+[TRAIN FILES]
+        - CLASS 0 - PROHIBITORY : 429
+        - CLASS 1 - DANGER : 178
+        - CLASS 2 - MANDATORY : 113
+        - CLASS 3 - STOP : 18
+        - CLASS 4 - YIELD : 62
+        - CLASS 5 - NOENTRY : 16
+        - CLASS 6 - FALSE_NEGATIVES : 0
+TOTAL: 816
+
+[TEST FILES]
+        - CLASS 0 - PROHIBITORY : 128
+        - CLASS 1 - DANGER : 41
+        - CLASS 2 - MANDATORY : 50
+        - CLASS 3 - STOP : 14
+        - CLASS 4 - YIELD : 21
+        - CLASS 5 - NOENTRY : 13
+TOTAL: 267
+
+[PROPORTION]
+        - CLASS 0 - PROHIBITORY : 22.98%
+        - CLASS 1 - DANGER : 18.72%
+        - CLASS 2 - MANDATORY : 30.67%
+        - CLASS 3 - STOP : 43.75%
+        - CLASS 4 - YIELD : 25.30%
+        - CLASS 5 - NOENTRY : 44.83%
