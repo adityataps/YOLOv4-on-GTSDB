@@ -1,0 +1,5 @@
+classes     = 6
+train       = data/gtsdb_2/annotated_imgs/train.txt
+valid       = data/gtsdb_2/annotated_imgs/test.txt
+names       = data/gtsdb_2/gtsdb_2.names
+backup      = backup_2/
