@@ -1,4 +1,4 @@
-D:\OneDrive - Georgia Institute of Technology\ONEDRIVE\College\Year 5 - Masters\1 - Fall 2021\GRAship\DataComp Prelim\gtsdb-sign-detection\src\P2 - Training\darknet\build\darknet\x64>darknet.exe detector map data/gtsdb/gtsdb.data yolov4-gtsdb.cfg backup/yolov4-gtsdb_10000.weights -points 0 -thresh 0.1
+D:\OneDrive - Georgia Institute of Technology\ONEDRIVE\College\Year 5 - Masters\1 - Fall 2021\GRAship\DataComp Prelim\gtsdb-sign-detection\src\P2 - Training\darknet\build\darknet\x64>darknet.exe detector map data/gtsdb/gtsdb.data yolov4-gtsdb.cfg backup/yolov4-gtsdb_10000.weights -thresh 0.25
  CUDA-version: 11020 (11040), cuDNN: 8.2.1, GPU count: 1
  OpenCV version: 4.5.3
  0 : compute_capability = 750, cudnn_half = 0, GPU: NVIDIA GeForce RTX 2070 SUPER
@@ -188,23 +188,23 @@ Done! Loaded 162 layers from weights-file
  Detection layer: 161 - type = 28
 132
  detections_count = 1678, unique_truth_count = 225
-class_id = 0, name = PROHIBITORY, ap = 91.17%            (TP = 104, FP = 6)
-class_id = 1, name = DANGER, ap = 72.23%         (TP = 33, FP = 4)
-class_id = 2, name = MANDATORY, ap = 83.87%      (TP = 24, FP = 1)
-class_id = 3, name = INFORMATION, ap = 78.27%            (TP = 7, FP = 1)
+class_id = 0, name = PROHIBITORY, ap = 91.17%            (TP = 104, FP = 2)
+class_id = 1, name = DANGER, ap = 72.23%         (TP = 33, FP = 2)
+class_id = 2, name = MANDATORY, ap = 83.87%      (TP = 23, FP = 0)
+class_id = 3, name = INFORMATION, ap = 78.27%            (TP = 7, FP = 0)
 class_id = 4, name = STOP, ap = 98.61%           (TP = 16, FP = 2)
-class_id = 5, name = YIELD, ap = 100.00%         (TP = 8, FP = 2)
+class_id = 5, name = YIELD, ap = 100.00%         (TP = 8, FP = 0)
 class_id = 6, name = NOENTRY, ap = 0.00%         (TP = 0, FP = 0)
 class_id = 7, name = TL-RED, ap = 0.00%          (TP = 0, FP = 0)
 class_id = 8, name = TL-AMBER, ap = 0.00%        (TP = 0, FP = 0)
 class_id = 9, name = TL-GREEN, ap = 0.00%        (TP = 0, FP = 0)
 
- for conf_thresh = 0.10, precision = 0.92, recall = 0.85, F1-score = 0.89
- for conf_thresh = 0.10, TP = 192, FP = 16, FN = 33, average IoU = 77.54 %
+ for conf_thresh = 0.25, precision = 0.97, recall = 0.85, F1-score = 0.91
+ for conf_thresh = 0.25, TP = 191, FP = 6, FN = 34, average IoU = 81.44 %
 
  IoU threshold = 50 %, used Area-Under-Curve for each unique Recall
  mean average precision (mAP@0.50) = 0.524145, or 52.41 %
-Total Detection Time: 6 Seconds
+Total Detection Time: 5 Seconds
 
 Set -points flag:
  `-points 101` for MS COCO
