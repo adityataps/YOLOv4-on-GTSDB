@@ -7329,7 +7329,7 @@ __________________________________________________
 
 #######################################################
 {'True Positives': 618, 'False Negatives': 116, 'False Positives': 34}
-Mean Average Precision:		 0.9543842682140555
-Average Recall (Total):		 0.8419618528610354
-Average Precision (Total):	 0.9478527607361963
-F1 Score (Total):			 0.8917748917748918
+Mean Average Precision:			 0.9543842682140555
+Average Precision (Total):		 0.9478527607361963
+Average Recall (Total):			 0.8419618528610354
+F1 Score (Total):				 0.8917748917748918

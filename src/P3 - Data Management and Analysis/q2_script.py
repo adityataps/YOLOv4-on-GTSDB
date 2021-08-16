@@ -39,7 +39,7 @@ with open("gt.txt", "r") as gt_txt:
     for idx, line in enumerate(all_gt):
         all_gt[idx] = line.strip().split(";")
 
-sys.stdout = open("model_evaluation_append.txt", "w")
+sys.stdout = open("model_evaluation_noappend.txt", "w")
 
 def evaluate_prediction(image):
 
@@ -51,7 +51,6 @@ def evaluate_prediction(image):
         for idx, line in enumerate(all_gt):
             if line[0] == image:
                 gt_sublist.append(line)
-        # print(gt_sublist)
 
         # Retrieving predictions
         json_signs = [frame for frame in pred_data["output"]["frames"] if frame["frame_number"] == image]
@@ -127,16 +126,12 @@ def evaluate_prediction(image):
         ################################################################
         ############# IF TRUE AND FALSE POSITIVES ARE ZERO #############
         if gt_sign_count[dict_class] == 0 and pred_sign_count[dict_class] == 0:
-            img_precisions.append(1)
-            img_recalls.append(1)
+            # img_precisions.append(1)
+            # img_recalls.append(1)
             continue
         ################################################################
 
         diff = gt_sign_count[dict_class] - pred_sign_count[dict_class]
-
-        # if diff == 0:
-        #     img_precisions.append(img_tp / (img_tp))
-
 
         if diff >= 0:           # Presence of false negatives (detector missed signs)
             compare_dict["False Negatives"] += diff
@@ -183,12 +178,12 @@ for file in os.listdir(folder_path):
 
 print("\n#######################################################")
 print(total_stats)
-print("Mean Average Precision:\t\t", np.average(average_precisions))
-total_precision = total_stats["True Positives"] / (total_stats["True Positives"] + total_stats["False Negatives"])
-print("Average Recall (Total):\t\t", total_precision)
-total_recall = total_stats["True Positives"] / (total_stats["True Positives"] + total_stats["False Positives"])
-print("Average Precision (Total):\t", total_recall)
-print("F1 Score (Total):\t\t\t", 2 * total_precision * total_recall / (total_precision + total_recall))
+print("Mean Average Precision:\t\t\t", np.average(average_precisions))
+total_precision = total_stats["True Positives"] / (total_stats["True Positives"] + total_stats["False Positives"])
+print("Average Precision (Total):\t\t", total_precision)
+total_recall = total_stats["True Positives"] / (total_stats["True Positives"] + total_stats["False Negatives"])
+print("Average Recall (Total):\t\t\t", total_recall)
+print("F1 Score (Total):\t\t\t\t", 2 * total_precision * total_recall / (total_precision + total_recall))
 
 
 
