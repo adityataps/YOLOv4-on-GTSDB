@@ -4,6 +4,8 @@
 # Georgia Institute of Technology   #
 # Summer/Fall 2021                  #
 #####################################
+
+
 import json
 import matplotlib as plt
 plt.rcParams['figure.dpi'] = 500
@@ -11,7 +13,7 @@ import matplotlib.image as mplimg
 import matplotlib.pyplot as pyplot
 import matplotlib.patches as patches
 
-
+# Parsing json to get "pn" predicted images
 def parse_json():
     pn_images = []
     with open("GTSDB.json", "r") as json_file:
@@ -25,7 +27,7 @@ def parse_json():
                                       sign["detection_confidence"]))
     return pn_images
 
-
+# Appending ground truths file to include "pn" class
 def inject_gt(pn_images):
 
     with open("gt.txt", "a") as gt_txt:
@@ -40,7 +42,7 @@ def inject_gt(pn_images):
                 print("\n", inject_data)
                 gt_txt.write(inject_data)
 
-
+# Showing the image with Matplotlib for annotating
 def show_img(img):
     img_name, coords, confidence = img
     img = mplimg.imread("../../data/FullIJCNN2013/FullIJCNN2013/" + img_name)
